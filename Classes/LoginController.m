@@ -3,6 +3,9 @@
 
 @implementation LoginController
 
+
+#pragma mark -
+#pragma mark View lifecycle
 - (id)initWithTarget:(id)theTarget andSelector:(SEL)theSelector {
 	[super initWithNibName:@"Login" bundle:nil];
 	target = theTarget;
@@ -26,6 +29,9 @@
     [super dealloc];
 }
 
+
+#pragma mark -
+#pragma mark custom methods
 - (void)failWithMessage:(NSString *)theMessage {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentication failed" message:theMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alert show];

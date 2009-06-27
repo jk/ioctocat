@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import "LoginController.h"
+#import "LoginTableViewController.h"
 #import "MyFeedsController.h"
 #import "GHUser.h"
 

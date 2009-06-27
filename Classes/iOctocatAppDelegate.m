@@ -118,7 +118,8 @@
 
 - (void)presentLogin {
 	if (self.loginController) return;
-	LoginController *loginController = [[LoginController alloc] initWithTarget:self andSelector:@selector(authenticate)];
+	//LoginController *loginController = [[LoginController alloc] initWithTarget:self andSelector:@selector(authenticate)];
+	LoginTableViewController *loginController = [[LoginTableViewController alloc] initWithTarget:self andSelector:@selector(authenticate)];
 	[tabBarController presentModalViewController:loginController animated:YES];
 	[loginController release];
 }
